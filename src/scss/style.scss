@@ -1,0 +1,117 @@
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+$mailColor:#E3B873;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1236px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: FuturaBookC, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 22px 102px 24px 82px;
+    text-transform: uppercase;
+    background: #131313;;
+
+
+    & .phone{
+        a{
+            color: $mailColor;
+        }
+
+    }
+
+    & .button {
+
+        background: $mailColor;
+    }
+}
+
+
+.logo {
+    color: $mailColor;
+}
+
+
+.nav-menu {
+
+    &-item {
+        display: inline-block;
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        &:hover {
+            color: $mailColor;
+
+        }
+
+    }
+
+}
+
+.banner-image {
+    text-align: right;
+}
+
+.banner-instagram {
+    position: absolute;
+    left: 0%;
+    right: 50.83%;
+    top: 7.78%;
+    bottom: 91.41%;
+
+    color: $mailColor;
+    background: #131313;
+    transform: rotate(-90deg);
+
+    &::after {
+        content: " ";
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: $mailColor;
+    }
+}
+
+
+.projects {
+
+}
+
+.onlineControl {
+
+}
+.types_of_repair-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+
+}

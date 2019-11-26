@@ -1,0 +1,94 @@
+@import "variables";
+.types_of_design {
+    background: url(../../src/assets/images/bg-design.png) no-repeat;
+    background-size: cover;
+    margin-bottom: 154px;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        background: none;
+        margin-bottom: 0;
+    }
+    &-smblock {
+        display: none;
+        &--title {
+            margin: 0 auto 24px;
+            text-align: center;
+            color: $mainPageColor;
+            width: 70%;
+            font-size: 22px;
+        }
+        @media screen and (max-width: 768px) {
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &-block {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        display: flex;
+        justify-content: space-between;
+        height: 864px;
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        &--items {
+            padding: 137px 99px 97px 10px;
+            width: 75%;
+            &-title {
+                font-family: $fontYesevaOne;
+                font-size: 27px;
+                line-height: 37px;
+                text-transform: uppercase;
+                color: $mainPageColor;
+                width: 80%;
+                margin-bottom: 47px;
+            }
+            &-list {
+                font-family: Proxima Nova, sans-serif;
+                font-size: 20px;
+                line-height: 34px;
+                li {
+                    margin-bottom: 12px;
+                }
+                a {
+                    color: #FFFFFF;
+                    display: inline-block;
+                    padding-bottom: 3px;
+                }
+                a.active {
+                    color: $mainPageColor;
+                    border-bottom: 1px solid $mainPageColor;
+                }
+                a:hover {
+                    color: $mainPageColor;
+                    border-bottom: 1px solid $mainPageColor;
+                }
+            }
+        }
+        &--images {
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+            display: flex;
+            justify-content: flex-start;
+            &-col {
+                top: -20px;
+                img {
+                    padding: 10px;
+                }
+                &:first-child {
+                    margin-top: -40px;
+                }
+                &:last-child {
+                    margin-top: -112px;
+                }
+            }
+        }
+    }
+}

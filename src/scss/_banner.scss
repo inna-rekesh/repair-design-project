@@ -1,0 +1,109 @@
+@import "variables";
+.banner {
+    position: relative;
+    margin-top: -1px;
+    &-image {
+        text-align: right;
+        overflow: hidden;
+        & img {
+            vertical-align: middle;
+            height: auto;
+            @media screen and (max-width: 768px) {
+                height: 476px;
+            }
+        }
+    }
+    &-description {
+        .btn {
+            @media screen and (max-width: 768px) {
+                width: 95%;
+            }
+        }
+        position: absolute;
+        top: 30%;
+        left: 200px;
+        width: 36%;
+        color: #FFFFFF;
+        @media screen and (max-width: 768px) {
+            width: 90%;
+            left: 18px;
+            top: 85px;
+            margin-right: 25px;
+        }
+        span {
+            color: $mainPageColor;
+        }
+        h1 {
+            width: 60%;
+            line-height: 53px;
+            margin-bottom: 19px;
+            @media screen and (min-width: 375px) {
+                font-size: 23px;
+                line-height: 25px;
+            }
+        }
+        p {
+            font-family: $fontFuturaBookC;
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 41px;
+            @media screen and (min-width: 375px) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.banner-instagram {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90px;
+    height: 93%;
+    background: $mainBgColor;
+    &--item {
+        position: absolute;
+        left: 0;
+        top: 35%;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $mainPageColor;
+        transform: rotate(90deg);
+        &::after {
+            content: " ";
+            position: absolute;
+            top: -17px;
+            left: 120px;
+            transform: rotate(90deg);
+            display: block;
+            width: 1.5px;
+            height: 50px;
+            background: $mainPageColor;
+        }
+    }
+}
+
+.scroll-down {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    background: #131313;
+    padding: 35px 48px;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    text-transform: uppercase;
+    z-index: 1000;
+    &--link {
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    span {
+        display: inline-block;
+        margin: -2px 0 0 7px;
+    }
+}

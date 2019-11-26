@@ -1,0 +1,226 @@
+@import "variables";
+.online_control {
+  margin-bottom: 200px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    @media screen and (max-width: 768px) {
+      min-width: 340px;
+      margin: 0;
+    }
+  }
+  position: relative;
+  padding-bottom: 147px;
+  height: 650px;
+  @media screen and (max-width: 768px) {
+    height: auto;
+    background: $mainBgColor;
+    padding-bottom: 0;
+  }
+
+  &-pos {
+    position: absolute;
+    top: -215px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media screen and (max-width: 768px) {
+      position: static;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+  text-align: center;
+
+  &-title {
+    color: #ffffff;
+    margin-bottom: 31px;
+
+    h3 {
+      margin-bottom: 13px;
+    }
+
+    .icon-camera {
+      background: url("./../assets/icons/camera1.svg") no-repeat;
+      width: 120px;
+      height: 30px;
+    }
+  }
+
+  &-video {
+    margin: 0 auto 62px;
+    position: relative;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 0;
+    }
+    &--desktop {
+      min-width: 817px;
+      height: 434px;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+      margin: 0 auto;
+      @media screen and (max-width: 768px) {
+        display: block;
+        margin-bottom: 28px;
+      }
+    }
+
+  }
+
+  &-description {
+    max-width: 681px;
+    margin: 0 auto 91px;
+    position: relative;
+    padding-top: 34px;
+    font-size: 20px;
+    line-height: 34px;
+    color: #363636;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      color: #ffffff;
+      margin-bottom: 61px;
+      font-size: 14px;
+    }
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-25px);
+      display: block;
+      width: 50px;
+      height: 1.5px;
+      background: $mainPageColor;
+    }
+  }
+}
+
+.online_control-form {
+
+  &--block {
+    @include flex-space-between();
+    margin-bottom: 28px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    &-checkbox2 {
+      display: none;
+      @media screen and (max-width: 768px) {
+        margin: 26px 0 87px;
+        text-align: left;
+        display: block;
+        color: white;
+      }
+    }
+
+    &-input {
+      @media screen and (max-width: 768px) {
+        margin-right: 0;
+        &:first-child {
+          padding-bottom: 63px;
+        }
+      }
+
+      label {
+        display: block;
+        font-family: $fontFuturaBookC;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(54, 54, 54, 0.5);
+        text-align: left;
+        @media screen and (max-width: 768px) {
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+
+      margin-right: 46px;
+
+      &_item {
+        min-width: 268px;
+        border: none;
+        background: none;
+        font-family: $fontFuturaBookC;
+        font-size: 18px;
+        line-height: 24px;
+        border-bottom: 1px solid rgba(54, 54, 54, 0.5);
+
+        &::placeholder {
+          color: #000000;
+        }
+
+        @media screen and (max-width: 768px) {
+          border-bottom: 1px solid white;
+          width: 100%;
+          min-width: 340px;
+          &::placeholder {
+            color: #ffffff;
+          }
+        }
+      }
+
+      .btn-mainColor {
+        box-shadow: none;
+      }
+    }
+
+    &-submit {
+      @media screen and (max-width: 768px) {
+        position: absolute;
+        left: 50%;
+        bottom: -25px;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &--checkbox {
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+
+.video-control {
+    width: 85px;
+    height: 85px;
+    background: $mainPageColor;
+    line-height: 85px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+    @media screen and (max-width: 768px) {
+        width: 37px;
+        height: 37px;
+      line-height: 37px;
+      text-align: center;
+      vertical-align: middle;
+    }
+}
+.icon-control {
+    background: url("../assets/icons/play.svg") no-repeat;
+    width: 20px;
+    height: 27px;
+    @media screen and (max-width: 768px) {
+        background: url("../assets/icons/play-2.png") no-repeat;
+        width: 9px;
+        height: 13px;
+    }
+}

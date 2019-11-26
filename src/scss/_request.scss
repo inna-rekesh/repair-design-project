@@ -1,0 +1,104 @@
+@import "variables";
+.request {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    &-block {
+        @include flex-space-between();
+        margin: 144px 0 242px;
+        &--way {
+            img {
+                width: 700px;
+                margin-right: 54px;
+            }
+        }
+        .request-form {
+            background: #131313;
+            box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+            width: 509px;
+            padding: 28px 49px;
+            &--title {
+                width: 60%;
+                margin: 0 auto 39px;
+                font-family: FuturaDemiC;
+                font-size: 20px;
+                line-height: 25px;
+                color: #FFFFFF;
+            }
+            &--input {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+                margin-bottom: 48px;
+                input {
+                    font-family: 'FuturaMediumC', sans-serif;
+                    width: 408px;
+                    border: none;
+                    background: none;
+                    font-size: 18px;
+                    line-height: 25px;
+                    outline: none;
+                    &::placeholder {
+                        color: #ffffff;
+                    }
+                }
+                label {
+                    font-family: 'FuturaBookC', sans-serif;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+            &--checkbox {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-family: FuturaBookC;
+                font-size: 16px;
+                line-height: 22px;
+                color: #FFFFFF;
+                margin-bottom: 35px;
+                input {
+                    background: $mainPageColor;
+                    color: #E3B873;
+                    border-radius: 0;
+                    border: none;
+                    margin-right: 9px;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            &--btn {
+                text-align: right;
+                .btn {
+                    border-radius: 0;
+                }
+            }
+        }
+        &--icons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 38px;
+            &_block {
+                background: $mainPageColor;
+                border-radius: 50%;
+                width: 72px;
+                height: 72px;
+                padding: 15px;
+                margin-right: 25px;
+                .icon-piggy {
+                    background: url(../assets/icons/piggy.svg) no-repeat;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            &_text {
+                width: 50%;
+                font-family: 'FuturaDemiC';
+                font-size: 20px;
+                line-height: 25px;
+                color: $mainPageColor;
+                text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+            }
+        }
+    }
+}

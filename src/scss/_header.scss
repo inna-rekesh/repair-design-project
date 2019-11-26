@@ -1,0 +1,59 @@
+@import "variables";
+.header {
+    background: $mainBgColor;
+}
+
+.nav-block {
+    @include flex-space-between();
+    @media screen and (max-width: 1024px) {
+        flex-wrap: wrap;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    font-size: 14px;
+    line-height: 16px;
+    padding: 22px 0 24px 0;
+    text-transform: uppercase;
+    .nav-menu {
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+        &-item {
+            display: inline-block;
+            list-style: none;
+            padding: 0 23px;
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: $fontFuturaBookC;
+                &:hover {
+                    color: $mainPageColor;
+                }
+            }
+            &:hover {
+                color: $mainPageColor;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    & .phone {
+        a {
+            color: $mainPageColor;
+        }
+    }
+    & .button {
+        background: $mainPageColor;
+        background: #E3B873;
+        box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+        border-radius: 2px;
+        padding: 10px 33px 11px;
+        @media screen and (max-width: 640px) {
+            display: none;
+        }
+    }
+    & .logo {
+        color: $mainPageColor;
+    }
+}

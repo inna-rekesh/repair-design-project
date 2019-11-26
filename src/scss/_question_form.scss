@@ -1,0 +1,112 @@
+@import "variables";
+.question_form {
+  position: absolute;
+  top: -188px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 883px;
+  background: #181818;
+  padding: 34px 181px;
+  @media screen and (max-width: 768px) {
+    background: $mainBgColor;
+  }
+  @media screen and (max-width: 768px) {
+    position: relative;
+    padding: 18px;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+  }
+
+  &-title {
+    font-family: $fontYesevaOne;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  .question_form-input.first {
+    margin-right: 58px;
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+    }
+  }
+
+  .question_form-input.question {
+    @media screen and (max-width: 768px) {
+      margin: 0 auto 45px;
+    }
+  }
+
+  &-input {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 45px;
+    width: 520px;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      min-width: 340px;
+    }
+
+    input {
+      font-family: 'FuturaMediumC', sans-serif;
+      border: none;
+      background: none;
+      font-size: 18px;
+      line-height: 25px;
+      outline: none;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+
+    label {
+      display: block;
+      font-family: $fontFuturaBookC;
+      font-size: 15px;
+      line-height: 20px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontFuturaBookC;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+
+  }
+
+  &-btn {
+    text-align: center;
+    margin-bottom: 30px;
+
+    .btn-mainColor {
+      box-shadow: none;
+    }
+
+    .btn {
+      border-radius: 0;
+      text-transform: uppercase;
+      margin: 0;
+      @media screen and (max-width: 768px) {
+        min-width: 340px;
+      }
+    }
+  }
+}

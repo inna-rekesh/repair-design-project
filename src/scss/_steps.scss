@@ -1,0 +1,104 @@
+@import "variables";
+.steps {
+  background: $mainBgColor;
+  padding: 428px 0 501px;
+
+  &-container {
+    @include flex-space-between();
+
+    &--col {
+      &-title {
+        width: 200px;
+        position: relative;
+        font-family: $fontYesevaOne;
+        font-size: 27px;
+        line-height: 37px;
+        text-transform: uppercase;
+        color: #E3B873;
+        margin-bottom: 92px;
+
+        &--subtitle {
+          font-family: $fontFuturaBookC;
+          font-size: 15px;
+          line-height: 21px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          margin-bottom: 18px;
+        }
+
+        &::after {
+          content: ' ';
+          position: absolute;
+          top: 85%;
+          left: 105%;
+          width: 100px;
+          height: 1px;
+          background: $mainPageColor;
+        }
+      }
+
+      &-description {
+        &-page_number {
+          font-family: $fontYesevaOne;
+          font-size: 18px;
+          line-height: 25px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          margin-bottom: 22px;
+        }
+
+        &-title {
+          width: 50%;
+          font-family: $fontYesevaOne;
+          font-size: 15px;
+          line-height: 23px;
+          text-transform: uppercase;
+          color: #E3B873;
+          margin-bottom: 16px;
+        }
+
+        &-text {
+          width: 80%;
+          font-family: $fontFuturaBookC;
+          font-size: 15px;
+          line-height: 25px;
+          color: #FFFFFF;
+          margin-bottom: 110px;
+        }
+      }
+
+      &-list {
+        @include flex-space-between;
+        margin: 90px 0 44px;
+
+        &--item {
+          margin-right: 101px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &-point {
+            margin-bottom: 30px;
+
+            span {
+              font-family: $fontYesevaOne;
+              font-size: 15px;
+              line-height: 21px;
+              text-transform: uppercase;
+              color: #FFFFFF;
+            }
+
+            p {
+              margin-top: 17px;
+              font-family: $fontFuturaBookC;
+              font-size: 15px;
+              line-height: 18px;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}

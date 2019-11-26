@@ -1,0 +1,98 @@
+@import "variables";
+
+.types_of_repair {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 200px;
+  }
+  &-title {
+    margin-bottom: 24px;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 13px;
+    }
+
+    .icon-hammer {
+      background: url("./../assets/icons/hammer.svg") no-repeat;
+      width: 120px;
+      height: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 83px;
+    }
+  }
+}
+
+.types_of_repair-columns {
+  @include flex-space-between();
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  &--item {
+    position: relative;
+    margin-bottom: 172px;
+    @media screen and (max-width: 768px) {
+      margin: 0 17px 250px;
+      width: 90%;
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+    &-desc {
+      position: absolute;
+      top: 70%;
+      left: 31px;
+      width: 330px;
+      background: #ffffff;
+      font-size: 15px;
+      line-height: 25px;
+      color: #959595;
+      padding: 25px 38px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+        @media screen and (max-width: 768px) {
+            width: 270px;
+            left: 0;
+            top: 60%;
+            padding: 21px 31px 37px;
+        }
+
+      ul {
+        margin-bottom: 30px;
+      }
+
+      li {
+        list-style: disc;
+      }
+
+      ul :first-child {
+        list-style: none;
+        font-size: 18px;
+        line-height: 25px;
+        color: #363636;
+        font-family: 'Yeseva One', serif;
+        margin-bottom: 10px;
+      }
+    }
+
+    &-price {
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      background: $mainPageColor;
+      padding: 17px 21px;
+      color: #ffffff;
+      width: 238px;
+      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
+      font-family: 'Yeseva One';
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: uppercase;
+    }
+  }
+}

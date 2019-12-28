@@ -7,43 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="src/scss/style.css">
-    <script type="text/javascript" src="dist/bundle.js"></script>
 </head>
 
 <body>
 
 <header class="header">
     <div class="wrapper">
-        <div class="nav-block">
-            <a href="#" class="logo">IC "Repair design project"</a>
+        <div class="header-block">
+            <a href="#" class="header-block--logo">IC "Repair design project"</a>
             <nav class="nav">
-                <ul class="nav-menu">
-                    <li class="nav-menu-item">
+                <ul class="header-block--nav-menu">
+                    <li class="header-block--nav-menu__item">
                         <a href="#">home</a>
                     </li>
-                    <li class="nav-menu-item">
+                    <li class="header-block--nav-menu__item">
                         <a href="#">projects</a>
                     </li>
-                    <li class="nav-menu-item">
+                    <li class="header-block--nav-menu__item">
                         <a href="#">measurement</a>
                     </li>
-                    <li class="nav-menu-item">
+                    <li class="header-block--nav-menu__item">
                         <a href="#">team</a>
                     </li>
-                    <li class="nav-menu-item">
+                    <li class="header-block--nav-menu__item">
                         <a href="#">reviews</a>
                     </li>
-                    <li class="nav-menu-item">
+                    <li class="header-block--nav-menu__item">
                         <a href="#">contacts</a>
                     </li>
                 </ul>
             </nav>
-            <div class="phone">
-                <a href="">+7(928)768-32-39</a>
+            <div class="header-block--phone">
+                <a href="tel:+375295336599">+375-29-533-65-99</a>
             </div>
-            <div class="button">
-                <a href="#" class="btn ">Request a call</a>
-            </div>
+            <a class="header-block--button btn">Request a call</a>
         </div>
     </div>
 </header>
@@ -56,7 +53,7 @@
         </div>
 
         <div class="banner-instagram">
-            <a href="#" class="banner-instagram--item">Instagram</a>
+            <a href="http://www.instagram.com" class="banner-instagram--item">Instagram</a>
         </div>
         <div class="banner-description">
             <h1>Turnkey Repair in the city of <span>Rostov-on-Don</span></h1>
@@ -69,10 +66,6 @@
                 <button class="btn btn-lg btn-transparent">SUBMIT YOUR APPLICATION</button>
             </div>
         </div>
-        <div class="instagram">
-            <a href="#"></a>
-        </div>
-
         <div class="scroll-down">
             <a href="#" class="scroll-down--link">Scroll down
                 <span class='icon icon-down'></span>
@@ -119,7 +112,6 @@
                         <li class="control-list--item active"></li>
                         <li class="control-list--item"></li>
                         <li class="control-list--item"></li>
-                        <li class="control-list--item"></li>
                     </ul>
                     <a href="#" class="icon icon-arrow-right"></a>
                 </div>
@@ -143,7 +135,6 @@
             </div>
         </div>
     </div>
-    </div>
 </section>
 
 <section class="online_control">
@@ -156,11 +147,11 @@
             <div class="online_control-video">
                 <iframe class="online_control-video--desktop" width="817px" height="434"
                         src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                        allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
                 <iframe class="online_control-video--mobile" width=width="340px" height="207"
                         src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                        allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
                 <div class="video-control">
                     <span class="icon icon-control"></span>
@@ -197,7 +188,7 @@
                 </div>
                 <div class="online_control-form--checkbox">
                     <label for="checkbox" class="input-checkbox">
-                        <input type="checkbox" id="checkbox" checked>
+                        <input type="checkbox" id="checkbox">
                         <span class="checkmark"></span>
                         <span>I agree to the processing of personal data</span>
                     </label>
@@ -305,7 +296,7 @@
                     </div>
                     <div class="request-form--checkbox">
                         <label for="request-checkbox" class="input-checkbox">
-                            <input type="checkbox" id="request-checkbox" checked>
+                            <input type="checkbox" id="request-checkbox">
                             <span class="checkmark"></span>
                             <span>I agree to the processing of personal data</span>
                         </label>
@@ -332,7 +323,7 @@
         <div class="types_of_design-smblock">
             <h3 class="types_of_design-smblock--title">We realize your wildest fantasies</h3>
             <div class="types_of_design-smblock--image">
-                <img src="src/assets/images/design-sm-img.png">
+                <img src="src/assets/images/design-sm-img.png" alt="design-img">
             </div>
         </div>
         <div class="types_of_design-block">
@@ -436,11 +427,13 @@
                                 <li>Electricians plan</li>
                                 <li>Lighting plan</li>
                                 <div class="hidden">
-                                    <li>Wall reamers</li>
-                                    <li>3D visualization</li>
-                                    <li>Bill of materials</li>
-                                    <li>Departure for a selection of materials</li>
-                                    <li>Furniture selection</li>
+                                    <ul>
+                                        <li>Wall reamers</li>
+                                        <li>3D visualization</li>
+                                        <li>Bill of materials</li>
+                                        <li>Departure for a selection of materials</li>
+                                        <li>Furniture selection</li>
+                                    </ul>
                                 </div>
                             </ul>
                             <div class="design_projects-col--item-price">
@@ -451,6 +444,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </section>
 
 
@@ -724,47 +718,46 @@
                 Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
             </div>
             <div class="location-social">
-                <a href="#"><span class="icon icon-mail"></span> </a>
-                <a href="#"><span class="icon icon-instagram"></span></a>
+                <a href="https://mail.google.com"><span class="icon icon-mail"></span> </a>
+                <a href="http://www.instagram.com"><span class="icon icon-instagram"></span></a>
             </div>
         </div>
     </div>
     <div class="location-map">
         <img src="src/assets/images/map.png" alt="map" class="location-map-img">
     </div>
-    </div>
 </section>
 
 <footer class="footer">
     <div class="wrapper">
-        <div class="nav-block">
-            <div class="logo">IC "Repair design project"</div>
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li class="nav-menu-item">
+        <div class="footer-block">
+            <div class="footer-block--logo">IC "Repair design project"</div>
+            <nav class="footer-block--nav">
+                <ul class="footer-block--nav-menu">
+                    <li class="footer-block--nav-menu__item active">
                         <a href="#">home</a>
                     </li>
-                    <li class="nav-menu-item">
+                    <li class="footer-block--nav-menu__item">
                         <a href="#">projects</a>
                     </li>
-                    <li class="nav-menu-item">
+                    <li class="footer-block--nav-menu__item">
                         <a href="#">measurement</a>
                     </li>
-                    <li class="nav-menu-item">
+                    <li class="footer-block--nav-menu__item">
                         <a href="#">team</a>
                     </li>
-                    <li class="nav-menu-item">
+                    <li class="footer-block--nav-menu__item">
                         <a href="#">reviews</a>
                     </li>
-                    <li class="nav-menu-item">
+                    <li class="footer-block--nav-menu__item">
                         <a href="#">contacts</a>
                     </li>
                 </ul>
             </nav>
-            <div class="phone">
-                <a href="">+7(928)768-32-39</a>
+            <div class="footer-block--phone">
+                <a href="tel:+375295336599">+375-29-533-65-99</a>
             </div>
-            <div class="button">
+            <div class="footer-block--button btn">
                 <a>Request a call</a>
             </div>
         </div>

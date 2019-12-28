@@ -88,6 +88,9 @@
 }
 
 .scroll-down {
+    &:hover {
+        box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
+    }
     @media screen and (max-width: 768px) {
         display: none;
     }
